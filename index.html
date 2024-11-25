@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explora Brasil</title>
+    <!-- Fuente de Google para una tipografía moderna y legible -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:wght@300;400;600;700" rel="stylesheet" />
+    <!-- Bootstrap 5 para diseño responsivo y componentes -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Biblioteca AOS para animaciones al hacer scroll -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Navegación principal -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <!-- Logo o título del sitio -->
+        <a class="navbar-brand" href="#">Explora Brasil</a>
+        <!-- Botón de hamburguesa para dispositivos pequeños -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Menú de navegación -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <!-- Enlaces de las secciones -->
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#destinos">Destinos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cultura">Cultura</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gastronomia">Gastronomía</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sección de encabezado con título e introducción -->
+    <header id="inicio" class="header-section">
+      <div class="container text-center text-white" data-aos="fade-in">
+        <h1 class="display-4">Explora Brasil</h1>
+        <p class="lead">Un paraíso tropical lleno de cultura, naturaleza y aventura</p>
+        <a href="#destinos" class="btn btn-light btn-lg mt-3">Descubre más</a>
+      </div>
+    </header>
+
+    <!-- Sección de destinos destacados -->
+    <section id="destinos" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="text-primary">Destinos Imperdibles</h2>
+          <p>Descubre algunos de los lugares más espectaculares de Brasil</p>
+        </div>
+        <div class="row g-4">
+          <!-- Destino 1 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+              <img src="./img/selva_amazonas.jpg" class="card-img-top" alt="Amazonas">
+              <div class="card-body">
+                <h5 class="card-title">La Selva Amazónica</h5>
+                <p class="card-text">Explora el pulmón del mundo con su flora y fauna incomparables.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Destino 2 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card">
+              <img src="./img/cataratas_iguazu.jpg" class="card-img-top" alt="Cataratas del Iguazú">
+              <div class="card-body">
+                <h5 class="card-title">Cataratas del Iguazú</h5>
+                <p class="card-text">Siente el poder de estas imponentes cascadas, una maravilla natural.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Destino 3 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card">
+              <img src="./img/Rio_janeiro.jpg" class="card-img-top" alt="Río de Janeiro">
+              <div class="card-body">
+                <h5 class="card-title">Río de Janeiro</h5>
+                <p class="card-text">Vive la vibrante energía de esta ciudad llena de historia y playas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de cultura -->
+    <section id="cultura" class="bg-light py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Descripción de la cultura -->
+          <div class="col-lg-6" data-aos="fade-right">
+            <h2 class="text-success">Cultura Brasileña</h2>
+            <p>Desde el mundialmente famoso Carnaval hasta su música samba y bossa nova, Brasil es un centro de riqueza cultural. Sus festivales, arte y arquitectura hacen de este país un destino inigualable.</p>
+            <a href="#contacto" class="btn btn-success btn-lg">Planifica tu visita</a>
+          </div>
+          <!-- Imagen ilustrativa -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <img src="./img/carnaval_brasil.jpg" class="img-fluid rounded" alt="Cultura brasileña">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de gastronomía -->
+    <section id="gastronomia" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="text-danger">Gastronomía Brasileña</h2>
+          <p>Sabores exóticos y recetas únicas que deleitan el paladar</p>
+        </div>
+        <div class="row g-4">
+          <!-- Plato 1 -->
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <img src="./img/feijoada_brasil.jpg" class="img-fluid rounded" alt="Feijoada">
+            <h5 class="mt-3">Feijoada</h5>
+            <p>Un estofado tradicional a base de frijoles y carne.</p>
+          </div>
+          <!-- Plato 2 -->
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <img src="./img/acaraje_brasil.jpg" class="img-fluid rounded" alt="Acarajé">
+            <h5 class="mt-3">Acarajé</h5>
+            <p>Una delicia frita hecha de frijoles y rellena de camarones.</p>
+          </div>
+          <!-- Plato 3 -->
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+            <img src="./img/moqueca_brasil.jpg" class="img-fluid rounded" alt="Moqueca">
+            <h5 class="mt-3">Moqueca</h5>
+            <p>Un exquisito guiso de mariscos con leche de coco y especias.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <footer id="contacto" class="bg-dark text-light py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Información de contacto -->
+          <div class="col-lg-6" data-aos="fade-right">
+            <h4>Contáctanos</h4>
+            <p>Planea tu aventura con nuestro equipo de expertos.</p>
+          </div>
+          <!-- Formulario de contacto -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Nombre">
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Correo">
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" placeholder="Mensaje" rows="3"></textarea>
+              </div>
+              <button class="btn btn-primary btn-block">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      // Inicializar la biblioteca AOS
+      AOS.init();
+    </script>
+  </body>
+</html>

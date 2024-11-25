@@ -1,0 +1,23 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.header-section {
+  background: url('../img/Fondo_brasil.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  font-weight: 600;
+}
+section {
+  scroll-margin-top: 20px; /* Ajusta según la altura del navbar */
+}
